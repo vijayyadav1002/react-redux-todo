@@ -3,11 +3,11 @@ import { shallow } from 'enzyme';
 import toJson from 'enzyme-to-json';
 import { renderAtRoot } from './index';
 
-describe("test Index", () => {
+describe('test Index', () => {
     afterEach(() => {
         jest.clearAllMocks();
     });
-    it("should call renderAtRoot with correct args", () => {
+    it('should call renderAtRoot with correct args', () => {
         const renderSpy = jest.fn();
         jest.spyOn(ReactDOM, 'render').mockImplementation(renderSpy);
         renderAtRoot();
