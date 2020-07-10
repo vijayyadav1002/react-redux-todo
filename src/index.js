@@ -14,4 +14,6 @@ const renderAtRoot = () => render(
   document.getElementById('app')
 );
 
+renderAtRoot();
+
 export { renderAtRoot };

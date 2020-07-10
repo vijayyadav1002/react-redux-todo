@@ -16,6 +16,6 @@ describe('test Index', () => {
         const wrapper = shallow(renderSpy.mock.calls[0][0]);
         expect(toJson(wrapper)).toMatchSnapshot();
         const appRootNode = renderSpy.mock.calls[0][1];
-        expect(appRootNode.textContent).toBe('test');
+        expect(appRootNode.textContent).toBe('Things to doSubmit');
     });
 });
